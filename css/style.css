@@ -10,7 +10,11 @@ svg {
   width: 33.32%;
   float: left;
 }
-
+.gear-icon,
+.hammer-icon,
+.heart-icon {
+  transform-origin: 50% 25%;
+}
 
 
 /* --------------------------
@@ -18,7 +22,6 @@ svg {
 --------------------------- */
 .gear-icon {
   transition: transform .4s ease-out;
-  transform-origin: 50% 25%;
 }
 
 .gear:hover .gear-icon {
@@ -28,10 +31,20 @@ svg {
 /* --------------------------
   HAMMER
 --------------------------- */
-
+.hammer:hover .hammer-icon {
+  transform: rotate(45deg)
+}
+.hammer-icon {
+  transition: transform .3s ease-out;
+}
 
 /* --------------------------
   HEART
 --------------------------- */
+.heart-icon {
+  transition: transform .2s ease-out;
+}
 
-
+.heart:hover .heart-icon {
+  transform: scale(1.3);
+}
